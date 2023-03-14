@@ -1,0 +1,114 @@
+.inicio{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(to right, #023e84, #045fc7);
+    clip-path: polygon(100% 0, 100% 65%, 50% 95%, 0 65%, 0 0);
+    border:1px solid #000 ;
+}
+
+.content__inicio{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    gap: 10px;
+}
+.info__present{
+    width: 500px;
+    padding: 1rem;
+    font-family: var(--montserrat);
+}
+.info__present .titulo__present{
+    font-size: 2.750rem;
+    line-height: 45px;
+    color: var(--blanco);
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
+.info__present p{
+    color: var(--blanco);
+    font-size: 1.350rem;
+    letter-spacing:1px;
+}
+
+.descargar_cv{
+    display: block;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 600;
+    width:200px;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #ddb57e;
+    margin-top: 1rem;
+    border-radius:5px ;
+}
+.image__inicio{
+    width: 400px;
+}
+.icon-abajo{
+    position: absolute;
+    font-size: 3.4rem;
+    bottom:3.2rem;
+    left: calc(50% - 24px);
+    color: var(--blanco);   
+    animation: icons .8s ease-in-out 1s alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icons {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-6px);
+    }
+} 
+
+
+
+@media screen and (min-width: 768px)  {
+
+    .content__inicio{
+        width: 90%;
+        margin-top: 8rem;
+    }
+    .info__present .titulo__present{
+    font-size: 2.250rem;
+    margin-bottom: .8rem;
+    }
+    .info__present p{
+        font-size: 1.150rem;
+    }
+    .image__inicio{
+        width: 320px;
+    }
+    .descargar_cv{
+        width:180px;
+        padding: .8rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px)  {
+    
+    .content__inicio{
+        width: 80%; 
+        margin-top: 10rem;
+    }
+    .info__present .titulo__present{
+    font-size: 2.750rem;
+    margin-bottom: 1rem;
+    }
+    .info__present p{
+        font-size: 1.250rem;
+    }
+    .image__inicio{
+        width: 380px;
+    }
+    .descargar_cv{
+        width:200px;
+        padding: 1.1rem 0;
+    }
+}

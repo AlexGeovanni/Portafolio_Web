@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio web</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/all-Style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/sobre-mi.css">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/proyectos.css">
+    <link rel="stylesheet" href="./css/proyecto-card/card_proyecto.css">
+    <link rel="stylesheet" href="./css/formacion_academica.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+
+    <!-- librery font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="content__header">
+            <h class="titulo__header">AG</h>
+            <nav class="nav__header">
+                <ul>
+                    <li><a href="#sobre_mi">Sobre mi</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <i class="fa-light fa-brightness"></i>
+            </nav>
+            <div class="menu-ham">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </header>
+    <div class="regresa-inicio">
+        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+    </div>
+    <main>
+        <section id="Inicio" class="inicio">
+            <div class="content content__inicio">
+                    <div class="info__present">
+                        <h1 class="titulo__present">Hola, mi nombre es <span>Alex Geovanni</span></h1>
+                        <p>Soy un <strong>desarrollador web</strong> de lado del Front-End</p>
+                        <a class="descargar_cv" download="cv" href="#">DESCARGAR CV </a>
+                    </div>
+                    <img class="image__inicio" src="./IMG/undraw_data_processing_yrrv.svg" alt="">
+            </div>   
+            <a class="icon-abajo" href="#descrip"><i class="fa-solid fa-chevron-down"></i></a>
+        </section>
+        <section id="sobre_mi" class="content sobre-mi">
+            <div id="descrip" class="descrip">
+                <div class="imagen__descrip">
+                    <img src="./IMG/undraw_pic_profile_re_7g2h.svg" alt="">
+                </div>
+                <div class="descrip__content">
+                    <h2 class="titulo titulo__content">Sobre mi</h2>
+                    <p>Mi nombre Alex Geovanni , soy programador, motivado por las tecnologías, tengo una actitud
+                        positiva,
+                        actualmente estoy trabajando en el entorno de desarrollo web Front-End con un nivel
+                        intermedio en (HTM5, CSS3, JavaScript) y conocimiento básico de frameworks como React e Nodejs,
+                        igualmente manejo bases de datos en MySQL y Oracle, conocimiento básico en programación en C++ y
+                        python, Php .</p>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades" class=" habilidades">
+            <div class="content">
+                <h1 class="titulo titulo__habilidades">Habilidades</h1>
+            <div class=" content__habilidades">
+                <div class="habilidad">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>Html5</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>Css3</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-brands fa-node"></i>
+                    <p>Node JS</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-solid fa-database"></i>
+                    <p>Bases de datos</p>
+                    <p>Mysql & oracle</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="habilidad">
+                    <i class="fa-brands fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- <section id="proyectos" class=" content proyectos">
+            <h1 class="titulo titulo__proyectos">Proyectos</h1>
+            <div class="content__proyectos">
+                <div class="cards">
+                    <div class="card__proyecto vacio"></div>
+                    <div class="card__proyecto">
+                        <div class="titulo__card">
+                            <h2>Pagina de restaurante</h2>
+                            <p>Esta pagina no es resposive solo para desktop. </p>
+                            <a href="" target="_blank">Repositorio</a>
+                            <a href="" target="_blank">Pagina</a>
+                        </div>
+                        <div class="image-content__card">
+                            <img class="imagen__card" src="./IMG/img_proyectos/Restaurante.png" alt="">
+                            <div>
+                                <p class="titulo__js">JavaScript</p>
+                                <p class="titlulo__html">Html5</p>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__proyecto vacio"></div>
+                    <div class="card__proyecto">
+                        <div class="titulo__card">
+                            <h2>Poke API</h2>
+                            <p>Esta pagina si resposive.</p>
+                            <a href="https://github.com/AlexGeovanni/Launch-X-Practicas/tree/master/Fron-end/js" target="_blank">Repositorio</a>
+                            <a href="https://alexgeovanni.github.io/Launch-X-Practicas/Fron-end/js/Pokedex.html" target="_blank">Pagina</a>
+                        </div>
+                        <div class="image-content__card">
+                            <img class="imagen__card" src="./IMG/img_proyectos/poke_api.png" alt="">
+                            <div>
+                                <p class="titulo__js">JavaScript</p>
+                                <p class="titlulo__html">Html5</p>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="linea">
+
+                </div>
+                <div class="cards">
+                    <div class="card__proyecto">
+                        <div class="image-content__card">
+                            <img class="imagen__card" src="./IMG/Captura de pantalla (192).png" alt="">
+                            <div>
+                                <p class="titulo__js">JavaScript</p>
+                                <p class="titlulo__html">Html5</p>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                        </div>
+                        <div class="titulo__card">
+                            <h2>Desencriptador</h2>
+                            <p>Esta pagina si es resposive.</p>
+                            <a href="https://github.com/AlexGeovanni/Descriptador" target="_blank">Repositorio</a>
+                            <a href="https://alexgeovanni.github.io/Descriptador/" target="_blank">Pagina</a>
+                        </div>
+                    </div>
+                    <div class="card__proyecto vacio"></div>
+                    <div class="card__proyecto">
+                        <div class="image-content__card">
+                            <img class="imagen__card" src="./IMG/img_proyectos/disney.png" alt="">
+                            <div>
+                                <p class="titulo__js">JavaScript</p>
+                                <p class="titlulo__html">Html5</p>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                        </div>
+                        <div class="titulo__card">
+                            <h2>Interfaz de Disney</h2>
+                            <p>Esta pagina no es resposive solo para desktop.</p>
+                            <a href="https://github.com/AlexGeovanni/miniProyect_Disney" target="_blank">Repositorio</a>
+                            <a href="" target="_blank">Pagina</a>
+                        </div>
+                    </div>
+                    <div class="card__proyecto vacio"></div>
+                </div>
+            </div> -->
+        </section>
+        <section id="formacion" class="content formacion-Acadmia">
+            <h1 class="titulo titulo__formacion-Acadmia">Formación</h1>
+            <div class="estudios__formacion-Acadmia">
+                <img class="logo-uni__estudios" src="./IMG/logo/logo_unach.png" alt="">
+                <div class="titulo__estudios">
+                    <h2>Universidad Autonoma de Chiapas</h2>
+                    <p>Licenciatura en sistemas computaciones</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contactos">
+            <div class="content content__contactos">
+                <h1 class="titulo titulo__contacto">Contacto</h1>
+                <div class="contacto__content">
+                    <div class="datos">
+                        <div class="">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>Email: <span>geovaniale@8gmail.com</span></p>
+                        </div>
+                        <div class="">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <p>Whatsapp: <span>+52-000-000-00-00</span></p>
+                        </div>
+                    </div>
+                    <form action="" class="formulario">
+                            <div class="input__formulario">
+                                <input type="text" name="" id="" required placeholder="Nombre">
+                                <!-- <span class="nombre__inpunt">Nombre</span> -->
+                            </div>
+                            <div class="input__formulario">
+                                <input type="email" name="" id="" required placeholder="Correo Electronico">
+                                <!-- <span>Correo Electronico</span> -->
+                            </div>
+                        <textarea class="mensaje__formulario" name="" id="" cols="30" rows="10" required
+                            placeholder="Escriba el mensaje..."></textarea>
+                        <input class="button__formulario" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="redes-sociales__footer">
+            <a href="https://www.linkedin.com/in/alex-geovanni-diaz-dwf/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/alexgeovanni" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#" target="_blank"></a>
+        </div>
+        <div class="autor__footer">
+            <p>&copy; 2022 Alex Geovanni | | Oracle + AluraLatam </p>
+        </div>
+    </footer>
+</body>
+
+</html>

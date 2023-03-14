@@ -1,0 +1,79 @@
+/* cards de proyecttos */
+/* .cards .card__proyecto{
+    
+} */
+.card__proyecto{
+    /* background-color: rgb(255, 124, 124); */
+    margin: 1rem 0;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--montserrat);
+}
+.card__proyecto .image-content__card div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top:.7rem ;
+}
+.image-content__card div p{
+    width: 110px;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 5px;
+}
+.titulo__js{
+    background-color: #FFD520;
+}
+.titlulo__html{
+    background-color: #F54300;
+}
+.titulo__css{
+    background-color: #2445FF;
+}
+
+.imagen__card{
+    cursor: pointer;
+    width: 355px;
+    height: 230px;
+    border-radius: 5px;
+    border: 3px solid rgba(0,0,0,.5);
+}
+
+/* titulo del card */
+.titulo__card{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.titulo__card h2{
+    font-size: 1.50rem;
+    font-family: var(--montserrat);
+    color: var(--principal-color);
+    line-height: 32px;
+}
+.titulo__card p{
+    line-height: 18px;
+}
+.titulo__card a{
+    width: 180px;
+    text-decoration: none;
+    font-size: 1.250rem;
+    background-color: #ddb57e;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+
+.titulo__card a:hover{
+    color: var(--principal-color);
+    background-color: #f3d1a2;
+}
+

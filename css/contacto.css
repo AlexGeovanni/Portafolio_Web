@@ -1,0 +1,106 @@
+.contactos{
+    margin-top: 4rem;
+    width: 100%;
+    background: linear-gradient(to right, #023f84, #045fc742),url(../IMG/back_contacto.jpg) no-repeat fixed;  
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__contacto{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3.3rem;
+}
+
+/* .content__contactos{
+    background-color: rgb(250, 133, 133); 
+} */
+.contacto__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* datos  */
+
+.datos > div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: .8rem 0;
+}
+.datos > div i{
+    font-size: 1.8rem;
+}
+.datos > div p{
+    font-weight: 600;
+    font-family: var(--montserrat);
+    font-size: 1.150rem;
+}
+
+.datos > div span{
+    font-weight: 400;
+}
+
+
+
+/* formulario */
+.formulario{
+    padding: 1rem;
+    max-width: 550px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input__formulario{
+    width: 100%;
+    margin-bottom: .8rem;
+}
+.input__formulario input{
+    width: 100%;
+}
+/* estilo para todos los inputs de contacto */
+.formulario input , .formulario textarea{
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    letter-spacing: .8px;
+    border: 2px solid rgba(0,0,0,.5);
+    font-family: var(montserrat);
+}
+.formulario  .input__formulario input::placeholder , .formulario textarea::placeholder{
+    font-size: .9rem;
+}
+
+
+/* textarea */
+.formulario textarea{
+    resize: none;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+}
+
+/* botton del formulario */
+.button__formulario{
+    cursor: pointer;
+    width: 30%;
+    font-size: 1.250rem;
+    padding: .8rem 0;
+    margin-left: 1rem;
+    background-color: #ddb57e;
+    color: #fff;
+    transition: all .4s ease-in-out;
+    border: none;
+}
+
+.button__formulario:hover{
+    color: var(--principal-color);
+    background-color: #f3d1a2;
+}

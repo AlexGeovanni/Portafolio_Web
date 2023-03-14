@@ -1,0 +1,88 @@
+.habilidades{
+    margin-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(to right, #023e84, #045fc7);
+}
+.titulo__habilidades{
+    color: var(--blanco);
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.content__habilidades{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.habilidad{
+    height: 160px;
+    padding:0rem 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    box-shadow: -0px -1px 15px -5px rgba(0, 0, 0, .8);
+    border: 2px solid transparent;
+    transition: border .4s ease-in-out;
+}
+.habilidad:hover{
+    border-color: #fff;
+}
+
+.content__habilidades .habilidad i{
+    font-size: 4rem;
+    padding: .5rem .6rem;
+}
+.content__habilidades .habilidad p{
+    color: var(--blanco);
+    font-size: 1.1rem;
+    font-family: var(--montserrat);
+}
+
+.habilidad:hover.habilidad i{
+    font-size: 5rem;
+    transition: all .5s ease-in-out;
+}
+.habilidad:hover.habilidad .fa-react{
+    animation: react 5s linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes react {
+    to{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+.fa-html5{
+    color: #F54300;
+}
+.fa-css3-alt{
+    color:#2445FF ;
+    
+}
+.fa-js{
+    color: #FFD520;
+}
+.fa-react{
+    color: #4EE3EB;
+}
+.fa-node{
+    color: #10C51E;
+    transform:de;
+}
+.fa-database{
+    color: #646464;
+}
+.fa-figma{
+    color: #df3e3eee;
+}
+.fa-git-alt{
+    color: #FA600F;
+}

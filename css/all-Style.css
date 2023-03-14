@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding:75px;
+}
+:root{
+    --pincipal-color:#303030;
+    --primary-color: #023e84;
+    --montserrat: Poppins,sans-serif;
+    --blanco: #fff
+}
+
+.content{
+    width: 90%;
+    padding: 0 1rem;
+    margin: auto ;
+}
+.titulo{
+    font-size: 2.250rem;
+    font-weight: 600;
+    font-family: var(--montserrat);
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.autor__footer{
+    font-family: var(--montserrat);
+    font-size: 1.150rem;
+    margin-top: 1.5rem;
+    /* color: #ddb57e; */
+}
+.redes-sociales__footer > a {
+    display: block;
+    text-decoration: none;
+}
+.redes-sociales__footer{
+    display: flex;
+    gap: 2rem;
+}
+.redes-sociales__footer > a i{
+    font-size: 2.850rem;
+    color: var(--pincipal-color);
+    transition: all .3s ease-in-out;
+}
+.redes-sociales__footer > a i:hover{
+    transform: scale(1.1);
+    color: #000;
+    transition: all .5s ease-in-out;
+}
+
+
+/* ir hacia el inicio */
+.regresa-inicio{
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    opacity: 0;
+}
+.regresa-inicio a{
+    border-radius: 50%;
+    padding: 15px 16px;
+    background-color: #023e84;
+    cursor: pointer;
+}
+.regresa-inicio i{
+    color: var(--blanco);
+    font-size: 1.250rem;
+}
+
+.regresa-inicio a:hover{
+    background-color: var(--blanco);
+    border: 1px solid #023e84;
+    transition: all .3s ease-in-out;
+}
+.regresa-inicio a:hover i{
+    color: #023e84;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .content{
+        width: 95%;
+    }
+
+    .llamada__texto {
+        max-width: 600px;
+    }
+    main{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content{
+        width: 90%;
+    }
+}
