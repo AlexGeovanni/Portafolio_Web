@@ -3,9 +3,6 @@
     width: 100%;
     background: linear-gradient(to right, #023f84, #045fc742),url(../IMG/back_contacto.jpg) no-repeat fixed;  
     background-size: cover;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .titulo__contacto{
@@ -103,4 +100,13 @@
 .button__formulario:hover{
     color: var(--principal-color);
     background-color: #f3d1a2;
+}
+
+@media screen and (min-width: 0px) and (max-width:767px)  {
+    .contactos{
+        background: linear-gradient(to right, #023f84, #045fc7);
+    }
+    .contacto__content{
+        flex-direction: column-reverse;
+    }
 }

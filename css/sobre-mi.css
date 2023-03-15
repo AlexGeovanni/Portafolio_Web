@@ -6,8 +6,7 @@
     padding:1rem;
     display: grid;
     place-items: center;
-    /* gap: 20px; */
-    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(332px, 1fr));
 }
 
 .descrip .titulo__content{
@@ -23,6 +22,25 @@
 }
 
 
+@media screen and (min-width: 0px) and (max-width:767px)  {
+    .sobre-mi{
+        margin-top: 2rem;
+    }
+    .titulo__content{
+        text-align: center;
+    }
+    .imagen__descrip {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .descrip .imagen__descrip img{
+        width: 50%;
+        
+    }
+}
 
 @media screen and (min-width: 768px) {
     .descrip .imagen__descrip img{
