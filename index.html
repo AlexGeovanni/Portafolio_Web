@@ -27,7 +27,7 @@
     <header class="header">
         <div class="content__header">
             <h class="titulo__header">AG</h>
-            <nav class="nav__header">
+            <nav data-nav class="nav__header">
                 <ul>
                     <li><a href="#sobre_mi">Sobre mi</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
@@ -38,8 +38,8 @@
                 <i class="fa-light fa-brightness"></i>
             </nav>
             <div class="menu-ham">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-xmark"></i>
+                <i id="abrir-nav" class="fa-solid fa-bars"></i>
+                <i id="cerrar-nav" class="fa-solid fa-xmark"></i>
             </div>
         </div>
     </header>
@@ -49,13 +49,13 @@
     <main>
         <section id="Inicio" class="inicio">
             <div class="content content__inicio">
-                    <div class="info__present">
-                        <h1 class="titulo__present">Hola, mi nombre es <span>Alex Geovanni</span></h1>
-                        <p>Soy un <strong>desarrollador web</strong> de lado del Front-End</p>
-                        <a class="descargar_cv" download="cv" href="#">DESCARGAR CV </a>
-                    </div>
-                    <img class="image__inicio" src="./IMG/undraw_data_processing_yrrv.svg" alt="">
-            </div>   
+                <div class="info__present">
+                    <h1 class="titulo__present">Hola, mi nombre es <span>Alex Geovanni</span></h1>
+                    <p>Soy un <strong>desarrollador web</strong> de lado del Front-End</p>
+                    <a class="descargar_cv" download="cv" href="#">DESCARGAR CV </a>
+                </div>
+                <img class="image__inicio" src="./IMG/undraw_data_processing_yrrv.svg" alt="">
+            </div>
             <a class="icon-abajo" href="#descrip"><i class="fa-solid fa-chevron-down"></i></a>
         </section>
         <section id="sobre_mi" class="content sobre-mi">
@@ -77,45 +77,45 @@
         <section id="habilidades" class=" habilidades">
             <div class="content">
                 <h1 class="titulo titulo__habilidades">Habilidades</h1>
-            <div class=" content__habilidades">
-                <div class="habilidad">
-                    <i class="fa-brands fa-html5"></i>
-                    <p>Html5</p>
+                <div class=" content__habilidades">
+                    <div class="habilidad">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>Html5</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>Css3</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-brands fa-node"></i>
+                        <p>Node JS</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-solid fa-database"></i>
+                        <p>Bases de datos</p>
+                        <p>Mysql & oracle</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-brands fa-figma"></i>
+                        <p>Figma</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-brands fa-github"></i>
+                        <p>GitHub</p>
+                    </div>
                 </div>
-                <div class="habilidad">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p>Css3</p>
-                </div>
-                <div class="habilidad">
-                    <i class="fa-brands fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="habilidad">
-                    <i class="fa-brands fa-react"></i>
-                    <p>React</p>
-                </div>
-                <div class="habilidad">
-                    <i class="fa-brands fa-node"></i>
-                    <p>Node JS</p>
-                </div>
-                <div class="habilidad">
-                    <i class="fa-solid fa-database"></i>
-                    <p>Bases de datos</p>
-                    <p>Mysql & oracle</p>
-                </div>
-                <div class="habilidad">
-                    <i class="fa-brands fa-figma"></i>
-                    <p>Figma</p>
-                </div>
-                <div class="habilidad">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <p>Git</p>
-                </div>
-                <div class="habilidad">
-                    <i class="fa-brands fa-github"></i>
-                    <p>GitHub</p>
-                </div>
-            </div>
             </div>
         </section>
         <!-- <section id="proyectos" class=" content proyectos">
@@ -124,80 +124,84 @@
                 <div class="cards">
                     <div class="card__proyecto vacio"></div>
                     <div class="card__proyecto">
-                        <div class="titulo__card">
-                            <h2>Pagina de restaurante</h2>
-                            <p>Esta pagina no es resposive solo para desktop. </p>
-                            <a href="" target="_blank">Repositorio</a>
-                            <a href="" target="_blank">Pagina</a>
+                        <h2 class="titulo__card">Restaurante</h2>
+                        <img class="imagen__card" src="./IMG/img_proyectos/Restaurante.png" alt="">
+                        <div class="lenguajes">
+                            <p class="titulo__js">JavaScript</p>
+                            <p class="titlulo__html">Html5</p>
+                            <p class="titulo__css">Css3</p>
                         </div>
-                        <div class="image-content__card">
-                            <img class="imagen__card" src="./IMG/img_proyectos/Restaurante.png" alt="">
+                        <div class="descrip__card">
+                            <p>Esta pagina no es resposive solo para desktop. </p>
                             <div>
-                                <p class="titulo__js">JavaScript</p>
-                                <p class="titlulo__html">Html5</p>
-                                <p class="titulo__css">Css3</p>
+                                <a href="" target="_blank">Repositorio</a>
+                                <a href="" target="_blank">Pagina</a>
                             </div>
                         </div>
                     </div>
                     <div class="card__proyecto vacio"></div>
                     <div class="card__proyecto">
-                        <div class="titulo__card">
-                            <h2>Poke API</h2>
-                            <p>Esta pagina si resposive.</p>
-                            <a href="https://github.com/AlexGeovanni/Launch-X-Practicas/tree/master/Fron-end/js" target="_blank">Repositorio</a>
-                            <a href="https://alexgeovanni.github.io/Launch-X-Practicas/Fron-end/js/Pokedex.html" target="_blank">Pagina</a>
+                        <h2 class="titulo__card">Interfaz de Disney</h2>
+                        <img class="imagen__card" src="./IMG/img_proyectos/disney.png" alt="">
+                        <div class="lenguajes">
+                            <p class="titulo__js">JavaScript</p>
+                            <p class="titlulo__html">Html5</p>
+                            <p class="titulo__css">Css3</p>
                         </div>
-                        <div class="image-content__card">
-                            <img class="imagen__card" src="./IMG/img_proyectos/poke_api.png" alt="">
+                        <div class="descrip__card">
+                            <p>Esta pagina no es resposive solo para desktop.</p>
                             <div>
-                                <p class="titulo__js">JavaScript</p>
-                                <p class="titlulo__html">Html5</p>
-                                <p class="titulo__css">Css3</p>
+                                <a href="https://github.com/AlexGeovanni/miniProyect_Disney"
+                                    target="_blank">Repositorio</a>
+                                <a href="" target="_blank">Pagina</a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="linea">
 
                 </div>
                 <div class="cards">
                     <div class="card__proyecto">
-                        <div class="image-content__card">
-                            <img class="imagen__card" src="./IMG/Captura de pantalla (192).png" alt="">
-                            <div>
-                                <p class="titulo__js">JavaScript</p>
-                                <p class="titlulo__html">Html5</p>
-                                <p class="titulo__css">Css3</p>
-                            </div>
+                        <h2 class="titulo__card">Desencriptador</h2>
+                        <img class="imagen__card" src="./IMG/Captura de pantalla (192).png" alt="">
+                        <div class="lenguajes">
+                            <p class="titulo__js">JavaScript</p>
+                            <p class="titlulo__html">Html5</p>
+                            <p class="titulo__css">Css3</p>
                         </div>
-                        <div class="titulo__card">
-                            <h2>Desencriptador</h2>
+                        <div class="descrip__card">
                             <p>Esta pagina si es resposive.</p>
-                            <a href="https://github.com/AlexGeovanni/Descriptador" target="_blank">Repositorio</a>
-                            <a href="https://alexgeovanni.github.io/Descriptador/" target="_blank">Pagina</a>
+                            <div>
+                                <a href="https://github.com/AlexGeovanni/Descriptador" target="_blank">Repositorio</a>
+                                <a href="https://alexgeovanni.github.io/Descriptador/" target="_blank">Pagina</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card__proyecto vacio"></div>
                     <div class="card__proyecto">
-                        <div class="image-content__card">
-                            <img class="imagen__card" src="./IMG/img_proyectos/disney.png" alt="">
-                            <div>
-                                <p class="titulo__js">JavaScript</p>
-                                <p class="titlulo__html">Html5</p>
-                                <p class="titulo__css">Css3</p>
-                            </div>
+                        <h2 class="titulo__card">Poke API</h2>
+                        <img class="imagen__card" src="./IMG/img_proyectos/poke_api.png" alt="">
+                        <div class="lenguajes">
+                            <p class="titulo__js">JavaScript</p>
+                            <p class="titlulo__html">Html5</p>
+                            <p class="titulo__css">Css3</p>
                         </div>
-                        <div class="titulo__card">
-                            <h2>Interfaz de Disney</h2>
-                            <p>Esta pagina no es resposive solo para desktop.</p>
-                            <a href="https://github.com/AlexGeovanni/miniProyect_Disney" target="_blank">Repositorio</a>
-                            <a href="" target="_blank">Pagina</a>
+                        <div class="descrip__card">
+                            <p>Esta pagina si resposive.</p>
+                            <div>
+                                <a href="https://github.com/AlexGeovanni/Launch-X-Practicas/tree/master/Fron-end/js"
+                                    target="_blank">Repositorio</a>
+                                <a href="https://alexgeovanni.github.io/Launch-X-Practicas/Fron-end/js/Pokedex.html"
+                                    target="_blank">Pagina</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card__proyecto vacio"></div>
                 </div>
-            </div> -->
-        </section>
+            </div>
+        </section> -->
         <section id="formacion" class="content formacion-Acadmia">
             <h1 class="titulo titulo__formacion-Acadmia">Formación</h1>
             <div class="estudios__formacion-Acadmia">
@@ -223,14 +227,14 @@
                         </div>
                     </div>
                     <form action="" class="formulario">
-                            <div class="input__formulario">
-                                <input type="text" name="" id="" required placeholder="Nombre">
-                                <!-- <span class="nombre__inpunt">Nombre</span> -->
-                            </div>
-                            <div class="input__formulario">
-                                <input type="email" name="" id="" required placeholder="Correo Electronico">
-                                <!-- <span>Correo Electronico</span> -->
-                            </div>
+                        <div class="input__formulario">
+                            <input type="text" name="" id="" required placeholder="Nombre">
+                            <!-- <span class="nombre__inpunt">Nombre</span> -->
+                        </div>
+                        <div class="input__formulario">
+                            <input type="email" name="" id="" required placeholder="Correo Electronico">
+                            <!-- <span>Correo Electronico</span> -->
+                        </div>
                         <textarea class="mensaje__formulario" name="" id="" cols="30" rows="10" required
                             placeholder="Escriba el mensaje..."></textarea>
                         <input class="button__formulario" type="submit" value="Enviar">
@@ -250,6 +254,7 @@
             <p>&copy; 2022 Alex Geovanni | | Oracle + AluraLatam </p>
         </div>
     </footer>
+    <script src="./js/nav-menu.js"></script>
 </body>
 
 </html>
