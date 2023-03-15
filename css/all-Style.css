@@ -40,7 +40,7 @@ footer{
     font-family: var(--montserrat);
     font-size: 1.150rem;
     margin-top: 1.5rem;
-    /* color: #ddb57e; */
+    text-align: center;
 }
 .redes-sociales__footer > a {
     display: block;

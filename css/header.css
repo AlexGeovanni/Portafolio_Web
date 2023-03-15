@@ -30,7 +30,6 @@
 }
 .nav__header > ul li a{
     text-decoration: none;
-    font-size: 1.2rem;
     padding: .5rem .2rem; 
     color:var(--principal-color) ;
     font-family: Montserrat,sans-serif;
@@ -100,7 +99,7 @@
     .menu-ham{
         display: block;
         position: fixed;
-        right: 25px;
+        right: 10px;
         top: 25px;
     }
     .menu-ham i{
@@ -115,7 +114,8 @@
 }
 @media screen and (min-width: 768px){
     .header {
-        background-color: #797979;
+        position: fixed;
+        background-color: #fff;
     }
     .nav__header > ul li a{
         font-size: 1rem;

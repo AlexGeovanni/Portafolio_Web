@@ -20,3 +20,19 @@
 .vacio{
     height: 250px;
 }
+
+@media screen and (min-width: 0px) and (max-width:767px)  {
+    .content__proyectos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .linea{
+        display: none;
+    }
+    .vacio{
+        display: none;
+        background-color: aqua;
+    }
+    
+}

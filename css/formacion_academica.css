@@ -31,6 +31,16 @@
     line-height: 20px;
 }
 
+@media screen and (min-width: 0px){
+    .titulo__estudios h2{
+        font-size: 1.3rem;
+    }
+    .titulo__estudios p{
+        font-size: .950rem;
+    }
+}
+
+
 @media screen and (min-width: 768px){
     .titulo__estudios h2{
         font-size: 1.8rem;

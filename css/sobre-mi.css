@@ -40,6 +40,9 @@
         width: 50%;
         
     }
+    .descrip p{
+        font-size: .950rem;
+    }
 }
 
 @media screen and (min-width: 768px) {

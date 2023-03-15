@@ -80,6 +80,17 @@
     background-color: #f3d1a2;
 }
 
+/*media query */
+@media screen and (min-width: 0px) and (max-width:767px)  {
+    .imagen__card{
+        width: 100%;
+    }
+    .card__proyecto .lenguajes p,
+    .descrip__card p{
+        font-size: .9rem;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .card__proyecto{
         padding: 0;
@@ -92,7 +103,6 @@
     .card__proyecto .lenguajes p{
         max-width: 100px;
         font-size: 1rem;
-
     }
 }
 
