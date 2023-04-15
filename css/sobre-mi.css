@@ -1,13 +1,9 @@
 .sobre-mi{
-    width: 80%;
-    padding-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 .descrip{
-    padding:1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .descrip .titulo__content{
@@ -17,19 +13,23 @@
     font-family: var(--montserrat);
     line-height: 26px;
 }
-.descrip .imagen__descrip img{
-    width: 350px;
+
+
+.sobre-mi .imagen__descrip img{
+    width: 320px;
     opacity: .8;
 }
 
 .descrip__content{
-    max-width: 750px;
+    
 }
+
+
 .descrip__content div:first-child p{
     margin-bottom: 1rem;
 }
 
-/* div de  */
+/* div de hobbies */
 .content_hobbies{
     margin-top: 1.250rem;
 }
@@ -50,50 +50,25 @@
     border-radius: 50px;
 }
 
-@media screen and (min-width: 0px) and (max-width:767px)  {
-    .sobre-mi{
-        margin-top: 2rem;
+@media screen and (min-width: 0px) and (max-width:767px) {
+    .descrip{
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .titulo__content{
+    .descrip .titulo__content{
         text-align: center;
-    }
-    .imagen__descrip {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-    .descrip .imagen__descrip img{
-        width: 50%;
-        
-    }
-    .descrip p{
-        font-size: .950rem;
     }
 }
 
-@media screen and (min-width: 768px) {
-    /* .descrip .imagen__descrip img{
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .sobre-mi .imagen__descrip img{
         width: 280px;
-    } */
-    .descrip p{
-        font-size: 1rem;
+        margin-right: 2.5rem;
     }
-    /* .descrip__content{
-        width:100%;
-    } */
-    
 }
 
 @media screen and (min-width: 1024px) {
-    /* .descrip .imagen__descrip img{
-        width:300px;
-    } */
-    .descrip p{
-        font-size: 1.125rem;
+    .sobre-mi .imagen__descrip img{
+        margin-right: 7.5rem;
     }
-    /* .descrip__content{
-        width: 500px;
-    } */
 }

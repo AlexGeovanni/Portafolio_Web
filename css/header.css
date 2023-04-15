@@ -38,27 +38,6 @@
     letter-spacing:-.5px ;
 }
 
-.nav__header > ul li a::before{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom:5px;
-    background-color: var(--primary-color);
-    transition:.3s ease-in;
-
-}
-.nav__header > ul li a:hover:before{
-    width: 100%;
-    transition:.4s ease-in;
-}
-.nav__header > ul li a:hover{
-    color: var(--primary-color);
-}
-
-.nav__header > ul li a:active{
-    color: var(--primary-color);
-}
 
 /* menu dispositivo mobil */
 .menu-ham{
@@ -78,7 +57,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        background:linear-gradient(to right, #023e84, #045fc7);;
+        background:#045fc7;;
         width: 85%;
         height: 100vh;
         transform: translateX(800px);
@@ -100,19 +79,37 @@
     .menu-ham{
         display: block;
         position: fixed;
-        right: 10px;
+        right: 15px;
         top: 25px;
     }
     .menu-ham i{
         position: absolute;
-        right: 0;
+        right: 0px;
         z-index: 1;
     }
     .menu-ham .fa-xmark{
         display: none;
         opacity: 1;
     }
+    .nav__header > ul li{
+        display: block;
+        width: 100%;
+    }
+    .nav__header > ul li a{
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 2.5rem 0;
+        font-size: 1.4rem;
+    }
+    .nav__header > ul li a:hover{
+        background-color: #0d62c4;
+    }
 }
+
+
+
+
 @media screen and (min-width: 768px){
     .header {
         position: fixed;
@@ -124,6 +121,29 @@
     .nav__header ul{
         flex-direction: row;
     }
+
+    
+.nav__header > ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom:5px;
+    background-color: var(--primary-color);
+    transition:.3s ease-in;
+
+}
+.nav__header > ul li a:hover:before{
+    width: 100%;
+    transition:.4s ease-in;
+}
+.nav__header > ul li a:hover{
+    color: var(--primary-color);
+}
+
+.nav__header > ul li a:active{
+    color: var(--primary-color);
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -136,4 +156,27 @@
     .nav__header > ul li a{
         font-size: 1.1em;
     }
+
+    
+.nav__header > ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom:5px;
+    background-color: var(--primary-color);
+    transition:.3s ease-in;
+
+}
+.nav__header > ul li a:hover:before{
+    width: 100%;
+    transition:.4s ease-in;
+}
+.nav__header > ul li a:hover{
+    color: var(--primary-color);
+}
+
+.nav__header > ul li a:active{
+    color: var(--primary-color);
+}
 }

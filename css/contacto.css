@@ -1,26 +1,24 @@
 .contactos{
     margin-top: 4rem;
     width: 100%;
-    background: linear-gradient(to right, #023f84, #045fc742),url(../IMG/back_contacto.jpg) no-repeat fixed;  
-    background-size: cover;
 }
 
 .titulo__contacto{
-    color: #fff;
     text-align: center;
-    margin-bottom: 3.3rem;
+    margin-bottom: 1rem;
 }
 
 .contacto__content{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 
 /* datos  */
 
 .datos > div{
     display: flex;
+    margin-right: 1rem;
     align-items: center;
     justify-content: flex-start;
     align-items: center;
@@ -33,12 +31,12 @@
 .datos > div p{
     font-weight: 600;
     font-family: var(--montserrat);
-    font-size: 1.150rem;
+    font-size: 1.250rem;
 }
 
 .datos > div span{
     font-weight: 400;
-    color: #fff;
+    color: #023f84;
 }
 
 
@@ -46,7 +44,7 @@
 /* formulario */
 .formulario{
     padding: 1rem;
-    max-width: 550px;
+    width:600px;
     display: flex;
     flex-direction: column;
 }
@@ -86,11 +84,12 @@
 
 /* botton del formulario */
 .button__formulario{
+    display: block;
+    width: 80%;
+    margin: auto;
     cursor: pointer;
-    width: 30%;
     font-size: 1.250rem;
     padding: 1rem 0;
-    margin-left: 1rem;
     background-color: #ddb57e;
     color: #fff;
     transition: all .4s ease-in-out;
@@ -105,23 +104,27 @@
 
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
-    .contactos{
-        background: linear-gradient(to right, #023f84, #045fc7);
-    }
+
     .contacto__content{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .button__formulario{
         width: 100%;
         margin: 0;
     }
-    .datos i{
-        color: #fff
-    }
     .datos > div i{
         font-size: 1.5rem;
     }
     .datos > div p{
-        font-size: .950rem;
+        font-size: 1.150rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1023px)  {
+
+    .button__formulario{
+        width: 100%;
+    }
+    .datos > div p{
+        font-size: 1.2rem;
     }
 }

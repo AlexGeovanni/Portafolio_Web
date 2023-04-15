@@ -20,7 +20,6 @@ body{
 }
 
 .content{
-    width: 90%;
     padding: 0 1rem;
     margin: auto ;
 }
@@ -125,6 +124,6 @@ footer{
 
 @media screen and (min-width: 1024px) {
     .content{
-        width: 90%;
+        width: 80%;
     }
 }
