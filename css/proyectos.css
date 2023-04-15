@@ -29,12 +29,12 @@
 .mover-left{
     top: 50%;
     bottom: 50%;
-    left: -10px;
+    left: -18px;
 }
 .mover-right{
     top: 50%;
     bottom: 50%;
-    right:-5px;
+    right:-18px;
 }
 
 .mover-right:hover,
@@ -45,13 +45,7 @@
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
     .proyectos{
-        width:500px;
-    }
-    .mover-left{
-        left: -18px;
-    }
-    .mover-right{
-        right:-18px;
+        max-width:350px;
     }
 }
 @media screen and (min-width: 768px) and (max-width:1023px)  {
