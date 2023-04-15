@@ -1,56 +1,60 @@
 .habilidades{
-    margin-top: 4rem;
+    height: 65vh;
     padding-top: 3rem;
     padding-bottom: 5rem;
-    background: linear-gradient(to right, #023e84, #045fc7);
+    /* background: linear-gradient(to top, #023e84, #045fc7);  */
 }
 .titulo__habilidades{
-    color: var(--blanco);
+    color: #023e84;
     margin-bottom: 4rem;
     text-align: center;
 }
 .content__habilidades{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    flex-wrap: wrap;
-    gap: 18px;
+    max-width:900px;
+    margin: auto;
+    /* background-color: #023e84; */
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    row-gap: 10px;
 }
 .habilidad{
-    height: 160px;
-    padding:0rem 0;
+    padding: .4rem;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: column nowrap;
     align-items: center;
-    /* background-color: #fff; */
-    box-shadow: -0px -1px 15px -5px rgba(0, 0, 0, .8);
-    border: 2px solid transparent;
+    justify-content: center;
+    /* border: 2px solid #000; */
     transition: border .4s ease-in-out;
-}
-.habilidad:hover{
-    border-color: #fff;
+    /* background-color:#045fc7 ; */
 }
 
+
 .content__habilidades .habilidad i{
-    font-size: 4rem;
-    padding: .5rem .6rem;
+    font-size: 3.450rem;
 }
 .content__habilidades .habilidad p{
-    color: var(--blanco);
-    font-size: 1.1rem;
+    margin-top: .150rem;
+    color: #000;
+    font-size: .950rem;
     font-family: var(--montserrat);
 }
 
-.habilidad:hover.habilidad i{
-    font-size: 5rem;
-    transition: all .5s ease-in-out;
-}
-.habilidad:hover.habilidad .fa-react{
+
+.habilidad .fa-react{
     animation: react 5s linear;
     animation-iteration-count: infinite;
-
 }
+
+.content__habilidades div{
+    width: 100%;
+}
+
+/* .content__habilidades div:nth-child(8){
+    grid-column: 3/4;
+} */
+
+
 @keyframes react {
     to{
         transform: rotate(0deg);

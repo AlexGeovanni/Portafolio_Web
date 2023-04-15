@@ -1,26 +1,54 @@
 .sobre-mi{
-    margin-top: 4rem;
-    padding-bottom: 5rem;
+    width: 80%;
+    padding-bottom: 4rem;
 }
 .descrip{
     padding:1rem;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(332px, 1fr));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .descrip .titulo__content{
-    margin-bottom: .850rem;
+    margin-bottom: .250rem;
 }
 .descrip p{
-    font: 1.150rem var(--montserrat);
-    line-height: 28px;
-    text-align: justify;
+    font-family: var(--montserrat);
+    line-height: 26px;
 }
 .descrip .imagen__descrip img{
+    width: 350px;
     opacity: .8;
 }
 
+.descrip__content{
+    max-width: 750px;
+}
+.descrip__content div:first-child p{
+    margin-bottom: 1rem;
+}
+
+/* div de  */
+.content_hobbies{
+    margin-top: 1.250rem;
+}
+.content_hobbies .titulo__hobbie{
+    font-size: 1.450rem;
+    margin-bottom: .5rem;
+}
+.content_hobbies div{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.content_hobbies div p{
+    background-color: #ddb57e;
+    color: #fff;
+    font-weight: 600;
+    padding: .3rem 1.550rem;
+    border-radius: 50px;
+}
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
     .sobre-mi{
@@ -46,26 +74,26 @@
 }
 
 @media screen and (min-width: 768px) {
-    .descrip .imagen__descrip img{
+    /* .descrip .imagen__descrip img{
         width: 280px;
-    }
+    } */
     .descrip p{
         font-size: 1rem;
     }
-    .descrip__content{
+    /* .descrip__content{
         width:100%;
-    }
+    } */
     
 }
 
 @media screen and (min-width: 1024px) {
-    .descrip .imagen__descrip img{
-        width: 400px;
-    }
+    /* .descrip .imagen__descrip img{
+        width:300px;
+    } */
     .descrip p{
-        font-size: 1.150rem;
+        font-size: 1.125rem;
     }
-    .descrip__content{
-        /* width: 90%; */
-    }
+    /* .descrip__content{
+        width: 500px;
+    } */
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/inicio.css">
     <link rel="stylesheet" href="./css/sobre-mi.css">
-    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/tecnologias.css">
     <link rel="stylesheet" href="./css/proyecto-card/card_proyecto.css">
     <link rel="stylesheet" href="./css/proyectos.css">
     <link rel="stylesheet" href="./css/formacion_academica.css">
@@ -51,7 +51,7 @@
             <div class="content content__inicio">
                 <div class="info__present">
                     <h1 class="titulo__present">Hola, mi nombre es <span>Alex Geovanni</span></h1>
-                    <p>Soy un <strong>desarrollador web</strong> de lado del Front-End</p>
+                    <p><strong>Desarrollador web</strong> de lado del Front-End</p>
                     <a class="descargar_cv" download="cv" href="#">DESCARGAR CV </a>
                 </div>
                 <img class="image__inicio" src="./IMG/undraw_data_processing_yrrv.svg" alt="">
@@ -64,20 +64,30 @@
                     <img src="./IMG/undraw_pic_profile_re_7g2h.svg" alt="">
                 </div>
                 <div class="descrip__content">
-                    <h2 class="titulo titulo__content">Sobre mi</h2>
-                    <p>Mi nombre Alex Geovanni , soy programador, motivado por las tecnologías, tengo una actitud
-                        positiva,
-                        actualmente estoy trabajando en el entorno de desarrollo web Front-End con un nivel
-                        intermedio en (HTM5, CSS3, JavaScript) y conocimiento básico de frameworks como React e Nodejs,
-                        igualmente manejo bases de datos en MySQL y Oracle, conocimiento básico en programación en C++ y
-                        python, Php .</p>
+                    <div class="">
+                        <h2 class="titulo titulo__content">Sobre mi</h2>
+                        <p>Programador motivado por las tecnologias, actualmente trabajo en el entorno de desarrollado
+                            web
+                            de lado del Front-End, aunque tengo tengo conocimientos basicos de Back-End, servicios web
+                            SOAP
+                            y Api-Rest.</p>
+                        <p>Soy autudidacta, tengo una actitud positiva, me gusta aprender cosas nuevas.</p>
+                    </div>
+                    <div class="content_hobbies">
+                        <h3 class="titulo titulo__hobbie">Hobbies</h3>
+                        <div>
+                            <p>Deporte</p>
+                            <p>Programar</p>
+                            <p>Jugar video juegos</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="habilidades" class=" habilidades">
             <div class="content">
-                <h1 class="titulo titulo__habilidades">Habilidades</h1>
-                <div class=" content__habilidades">
+                <h1 class="titulo titulo__habilidades">Tecnologías</h1>
+                <div class="content__habilidades">
                     <div class="habilidad">
                         <i class="fa-brands fa-html5"></i>
                         <p>Html5</p>
@@ -100,8 +110,11 @@
                     </div>
                     <div class="habilidad">
                         <i class="fa-solid fa-database"></i>
-                        <p>Bases de datos</p>
-                        <p>Mysql & oracle</p>
+                        <p>Mysql</p>
+                    </div>
+                    <div class="habilidad">
+                        <i class="fa-solid fa-database"></i>
+                        <p>Oracle</p>
                     </div>
                     <div class="habilidad">
                         <i class="fa-brands fa-figma"></i>
@@ -120,85 +133,123 @@
         </section>
         <section id="proyectos" class=" content proyectos">
             <h1 class="titulo titulo__proyectos">Proyectos</h1>
-            <div class="content__proyectos">
-                <div class="cards">
-                    <div class="card__proyecto vacio"></div>
+            <i id="right" class="fa-solid fa-circle-arrow-right mover-right" data-mover></i>
+            <i id="left" class="fa-solid fa-circle-arrow-left  mover-left " data-mover></i>
+            <div class="carousels__proyectos">
+                <div class="content__proyectos" data-proyectos>
                     <div class="card__proyecto">
-                        <h2 class="titulo__card">Restaurante</h2>
                         <img class="imagen__card" src="./IMG/img_proyectos/Restaurante.png" alt="">
-                        <div class="lenguajes">
-                            <p class="titulo__js">JavaScript</p>
-                            <p class="titlulo__html">Html5</p>
-                            <p class="titulo__css">Css3</p>
-                        </div>
                         <div class="descrip__card">
-                            <p>Esta pagina no es resposive solo para desktop. </p>
-                            <div>
+                            <h2 class="titulo__card">Restaurante</h2>
+                            <p>Sitio web para restauante, no es resposive, fue construida con las siguientes
+                                tecnologias</p>
+                            <div class="lenguajes">
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <p class="titlulo__html">Html5</p>
+                                </div>
+                                <div> <i class="fa-brands fa-css3-alt"></i>
+                                    <p class="titulo__css">Css3</p>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <p class="titulo__js">JavaScript</p>
+                                </div>
+
+                            </div>
+                            <div class="ir_proyecto">
                                 <a href="" target="_blank">Repositorio</a>
                                 <a href="" target="_blank">Pagina</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card__proyecto vacio"></div>
                     <div class="card__proyecto">
-                        <h2 class="titulo__card">Interfaz de Disney</h2>
-                        <img class="imagen__card" src="./IMG/img_proyectos/disney.png" alt="">
-                        <div class="lenguajes">
-                            <p class="titulo__js">JavaScript</p>
-                            <p class="titlulo__html">Html5</p>
-                            <p class="titulo__css">Css3</p>
-                        </div>
+                        <img class="imagen__card" src="./IMG/Captura de pantalla (192).png" alt="">
                         <div class="descrip__card">
-                            <p>Esta pagina no es resposive solo para desktop.</p>
-                            <div>
-                                <a href="https://github.com/AlexGeovanni/miniProyect_Disney"
-                                    target="_blank">Repositorio</a>
+                            <h2 class="titulo__card">Restaurante</h2>
+                            <p>Sitio web para restauante, no es resposive, fue construida con las siguientes
+                                tecnologias</p>
+                            <div class="lenguajes">
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <p class="titlulo__html">Html5</p>
+                                </div>
+                                <div> <i class="fa-brands fa-css3-alt"></i>
+                                    <p class="titulo__css">Css3</p>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <p class="titulo__js">JavaScript</p>
+                                </div>
+
+                            </div>
+                            <div class="ir_proyecto">
+                                <a href="" target="_blank">Repositorio</a>
                                 <a href="" target="_blank">Pagina</a>
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-                <div class="linea"></div>
-                <div class="cards">
                     <div class="card__proyecto">
-                        <h2 class="titulo__card">Desencriptador</h2>
-                        <img class="imagen__card" src="./IMG/Captura de pantalla (192).png" alt="">
-                        <div class="lenguajes">
-                            <p class="titulo__js">JavaScript</p>
-                            <p class="titlulo__html">Html5</p>
-                            <p class="titulo__css">Css3</p>
-                        </div>
+                        <img class="imagen__card" src="./IMG/img_proyectos/disney.png" alt="">
                         <div class="descrip__card">
-                            <p>Esta pagina si es resposive.</p>
-                            <div>
-                                <a href="https://github.com/AlexGeovanni/Descriptador" target="_blank">Repositorio</a>
-                                <a href="https://alexgeovanni.github.io/Descriptador/" target="_blank">Pagina</a>
+                            <h2 class="titulo__card">Restaurante</h2>
+                            <p>Sitio web para restauante, no es resposive, fue construida con las siguientes
+                                tecnologias</p>
+                            <div class="lenguajes">
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <p class="titlulo__html">Html5</p>
+                                </div>
+                                <div> <i class="fa-brands fa-css3-alt"></i>
+                                    <p class="titulo__css">Css3</p>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <p class="titulo__js">JavaScript</p>
+                                </div>
+
+                            </div>
+                            <div class="ir_proyecto">
+                                <a href="" target="_blank">Repositorio</a>
+                                <a href="" target="_blank">Pagina</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card__proyecto vacio"></div>
                     <div class="card__proyecto">
-                        <h2 class="titulo__card">Poke API</h2>
                         <img class="imagen__card" src="./IMG/img_proyectos/poke_api.png" alt="">
-                        <div class="lenguajes">
-                            <p class="titulo__js">JavaScript</p>
-                            <p class="titlulo__html">Html5</p>
-                            <p class="titulo__css">Css3</p>
-                        </div>
                         <div class="descrip__card">
-                            <p>Esta pagina si resposive.</p>
-                            <div>
-                                <a href="https://github.com/AlexGeovanni/Launch-X-Practicas/tree/master/Fron-end/js"
-                                    target="_blank">Repositorio</a>
-                                <a href="https://alexgeovanni.github.io/Launch-X-Practicas/Fron-end/js/Pokedex.html"
-                                    target="_blank">Pagina</a>
+                            <h2 class="titulo__card">Restaurante</h2>
+                            <p>Sitio web para restauante, no es resposive, fue construida con las siguientes
+                                tecnologias</p>
+                            <div class="lenguajes">
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <p class="titlulo__html">Html5</p>
+                                </div>
+                                <div> <i class="fa-brands fa-css3-alt"></i>
+                                    <p class="titulo__css">Css3</p>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <p class="titulo__js">JavaScript</p>
+                                </div>
+
+                            </div>
+                            <div class="ir_proyecto">
+                                <a href="" target="_blank">Repositorio</a>
+                                <a href="" target="_blank">Pagina</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card__proyecto vacio"></div>
+                </div>
+                <div class="puntos">
+                    <p class="punto activo"></p>
+                    <p class="punto"></p>
+                    <p class="punto"></p>
+                    <p class="punto"></p>
                 </div>
             </div>
+
         </section>
         <section id="formacion" class="content formacion-Acadmia">
             <h1 class="titulo titulo__formacion-Acadmia">Formación</h1>
@@ -253,6 +304,7 @@
         </div>
     </footer>
     <script src="./js/nav-menu.js"></script>
+    <script src="./js/proyectos.carousels.js"></script>
 </body>
 
 </html>

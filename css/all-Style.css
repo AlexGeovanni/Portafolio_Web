@@ -9,6 +9,9 @@ html{
     scroll-behavior: smooth;
     scroll-padding:75px;
 }
+body{
+    background-color: rgba(248, 248, 248, 1);
+}
 :root{
     --pincipal-color:#303030;
     --primary-color: #023e84;
