@@ -15,7 +15,6 @@
 .content__proyectos{
     width:400%;
     display: flex;
-    gap: 10px;
     transition: all 1s ease-in-out;
     transform: translateX(-0%);
 }
@@ -36,7 +35,6 @@
     top: 50%;
     bottom: 50%;
     right:-5px;
-    z-index: 5;
 }
 
 .mover-right:hover,
@@ -46,8 +44,14 @@
 
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
-    .content__proyectos{
-        
+    .proyectos{
+        width:500px;
+    }
+    .mover-left{
+        left: -18px;
+    }
+    .mover-right{
+        right:-18px;
     }
 }
 @media screen and (min-width: 768px) and (max-width:1023px)  {
