@@ -123,28 +123,27 @@
     }
 
     
-.nav__header > ul li a::before{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom:5px;
-    background-color: var(--primary-color);
-    transition:.3s ease-in;
-
-}
-.nav__header > ul li a:hover:before{
-    width: 100%;
-    transition:.4s ease-in;
-}
-.nav__header > ul li a:hover{
-    color: var(--primary-color);
-}
-
-.nav__header > ul li a:active{
-    color: var(--primary-color);
-}
-}
+    .nav__header > ul li a::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom:5px;
+        background-color: var(--primary-color);
+        transition:.3s ease-in;
+    }
+    .nav__header > ul li a:hover:before{
+        width: 100%;
+        transition:.4s ease-in;
+    }
+    .nav__header > ul li a:hover{
+        color: var(--primary-color);
+    }
+    
+    .nav__header > ul li a:active{
+        color: var(--primary-color);
+    }
+    }
 
 @media screen and (min-width: 1024px) {
     .header {

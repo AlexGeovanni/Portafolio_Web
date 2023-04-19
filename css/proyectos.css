@@ -1,51 +1,21 @@
 .proyectos{
-    max-width: 850px;
     margin-top: 4rem;
     padding-top: 1rem;
-    position: relative;
 }
 .titulo__proyectos{
     text-align: center;
     margin-bottom: 2rem;
 }
-.proyectos .carousels__proyectos{
-    width: 100%;
-    overflow: hidden;
-}
+
 .content__proyectos{
-    width:400%;
-    display: flex;
-    transition: all 1s ease-in-out;
-    transform: translateX(-0%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr)) ;
+    place-items: center;
 }
-
-.mover-right,
-.mover-left{
-    position: absolute;
-    font-size: 2.150rem;
-    z-index: 5;
-    cursor: pointer;
-}
-.mover-left{
-    top: 50%;
-    bottom: 50%;
-    left: -18px;
-}
-.mover-right{
-    top: 50%;
-    bottom: 50%;
-    right:-18px;
-}
-
-.mover-right:hover,
-.mover-left:hover{
-    color: rgba(0,0,0,.7);
-}
-
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
     .proyectos{
-        width: 90%;
+        width: 200px;
     }
     .proyectos .mover-right,
     .proyectos .mover-left{
@@ -54,7 +24,7 @@
 }
 @media screen and (min-width: 768px) and (max-width:1023px)  {
     .proyectos{
-        width: 700px;
+        
 
     }
     .content__proyectos{
