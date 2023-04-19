@@ -9,14 +9,12 @@
 
 .content__proyectos{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr)) ;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)) ;
     place-items: center;
 }
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
-    .proyectos{
-        width: 200px;
-    }
+
     .proyectos .mover-right,
     .proyectos .mover-left{
         display: none;

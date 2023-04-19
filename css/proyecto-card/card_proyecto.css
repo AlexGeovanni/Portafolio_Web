@@ -127,17 +127,15 @@
         border-radius:0 ;
     }
     .card__proyecto .lenguajes{
-        margin: 1rem 0;
-        justify-content: flex-start;
-        gap: 18px;
+        margin: .5rem 0;
     }
-    .card__proyecto .lenguajes p,
-    .descrip__card p{
-        font-size: .9rem;
-        opacity: .8;
-    }
+
     .ir_proyecto{
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+    .ir_proyecto a{
+        padding: .3rem .8rem;
+        font-size: .850rem;
     }
 }
 
