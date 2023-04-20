@@ -10,7 +10,6 @@
 .contacto__content{
     display: flex;
     justify-content: space-evenly;
-
 }
 
 /* datos  */
@@ -140,7 +139,10 @@
         font-size: 1.5rem;
     }
     .datos > div p{
-        font-size: 1.150rem;
+        font-size: 1.050rem;
+    }
+    .datos > div span{
+        font-size: .850rem;
     }
     .formulario{
         width: 100%;

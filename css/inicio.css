@@ -70,6 +70,7 @@
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
     .inicio{
+        margin-top: 4rem;
         clip-path: none;
         height: 90vh;
     }
@@ -77,6 +78,7 @@
         width: 100%;
         height: 90%;
         margin-top: 0;
+        padding-top: 4.5rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -88,8 +90,8 @@
         align-items: center;
     }
     .info__present .titulo__present{
-        font-size: 2.550rem;
-        text-align: center;
+        font-size: 2.3rem;
+        text-align: left;
     }
     
     .info__present p{

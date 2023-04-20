@@ -14,18 +14,11 @@
 }
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
-
-    .proyectos .mover-right,
-    .proyectos .mover-left{
-        display: none;
-    }
+   .proyectos{
+    margin-top: 0rem;
+   }
+    
 }
 @media screen and (min-width: 768px) and (max-width:1023px)  {
-    .proyectos{
-        
-
-    }
-    .content__proyectos{
-        
-    }
+    
 }
