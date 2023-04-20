@@ -6,8 +6,16 @@
 }
 .titulo__habilidades{
     color: #023e84;
-    margin-bottom: 4rem;
     text-align: center;
+}
+
+.content_titulo{
+    
+    margin-bottom: 1.5rem;
+}
+.content_titulo p{
+    font-weight: 400;
+    font-family: var(--montserrat);
 }
 .content__habilidades{
     max-width:900px;
