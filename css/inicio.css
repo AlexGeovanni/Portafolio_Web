@@ -88,7 +88,7 @@
 
 @media screen and (min-width: 0px) and (max-width:767px)  {
     .inicio{
-        margin-top: 4rem;
+        margin-top: 0rem;
         clip-path: none;
         height: 90vh;
     }
