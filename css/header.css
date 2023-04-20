@@ -79,7 +79,7 @@
     .menu-ham{
         display: block;
         position: fixed;
-        right: 15px;
+        right: 10px;
         top: 25px;
     }
     .menu-ham i{
