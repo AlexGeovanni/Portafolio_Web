@@ -54,6 +54,10 @@
         position:fixed;
         background-color: #fff;
     }
+    .content__header{
+        width: 95%;
+        padding: 1rem;
+    }
     .nav__header{
         position: fixed;
         top: 0;
@@ -80,7 +84,7 @@
     .menu-ham{
         display: block;
         position: fixed;
-        right: 10px;
+        right: 17px;
         top: 25px;
     }
     .menu-ham i{

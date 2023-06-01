@@ -64,10 +64,12 @@
     pointer-events: none;
     transition: all .3s ease-in-out;
 }
+
 .formulario div input:valid ~span,
 .formulario div input:focus ~span{
     top: -13px;
     font-size: .9rem;
+    font-weight:400 ;
     transition: all .5s ease-in-out;
     background-color: rgba(248, 248, 248, 1);
 }
@@ -145,6 +147,7 @@
         font-size: .850rem;
     }
     .formulario{
+        padding: 0;
         width: 100%;
     }
 }
