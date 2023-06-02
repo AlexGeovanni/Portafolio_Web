@@ -77,7 +77,7 @@ footer{
 
 @media screen and (min-width: 0px) and (max-width:767px) {
     html{
-        scroll-padding:0 ;
+        scroll-padding:80px ;
     }
     .content{
         width: 95%;

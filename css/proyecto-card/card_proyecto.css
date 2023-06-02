@@ -121,7 +121,7 @@
 /*media query */
 @media screen and (min-width: 0px) and (max-width:767px)  {
     .card__proyecto{
-        height: 390px;
+        height: 400px;
         padding: 0;
         flex-direction: column;
     }
@@ -135,7 +135,7 @@
         line-height: 20px;
     }
     .imagen__card{
-        height: 180px;   
+        height: 170px;   
     }
     .imagen__card img{
         height: 100%;
