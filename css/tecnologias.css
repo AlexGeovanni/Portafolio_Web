@@ -54,9 +54,6 @@
     width: 100%;
 }
 
-/* .content__habilidades div:nth-child(8){
-    grid-column: 3/4;
-} */
 
 
 @keyframes react {
@@ -95,3 +92,9 @@
     color: #FA600F;
 }
 
+@media screen and (max-width:767px) {
+    .content__habilidades{
+        grid-template-columns: repeat(auto-fit,minmax(90px,1fr));
+        gap: 7px;
+    }
+}
