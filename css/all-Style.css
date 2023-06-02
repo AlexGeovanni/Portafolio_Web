@@ -44,24 +44,6 @@ footer{
     margin-top: 1.5rem;
     text-align: center;
 }
-.redes-sociales__footer > a {
-    display: block;
-    text-decoration: none;
-}
-.redes-sociales__footer{
-    display: flex;
-    gap: 2rem;
-}
-.redes-sociales__footer > a i{
-    font-size: 2.850rem;
-    color: var(--pincipal-color);
-    transition: all .3s ease-in-out;
-}
-.redes-sociales__footer > a i:hover{
-    transform: scale(1.1);
-    color: #000;
-    transition: all .5s ease-in-out;
-}
 
 
 /* ir hacia el inicio */

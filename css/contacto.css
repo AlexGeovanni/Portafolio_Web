@@ -37,14 +37,30 @@
     font-weight: 400;
 }
 
+.redes-sociales__datos > a {
+    display: block;
+    text-decoration: none;
+}
+.redes-sociales__datos{
+    display: flex;
+    gap: 2rem;
+}
+.redes-sociales__datos > a i{
+    font-size: 2.650rem;
+    color: var(--pincipal-color);
+    transition: all .3s ease-in-out;
+}
+.redes-sociales__datos > a i:hover{
+    transform: scale(1.1);
+    color: var(--primary-color);
+    transition: all .5s ease-in-out;
+}
 
 
 /* formulario */
 .formulario{
-    max-width: 600px;
-    width: 100%;
+    width: 600px;
     padding: 1rem;
-    /* background-color: #ddb57e; */
     display: flex;
     flex-direction: column;
 }
@@ -64,9 +80,15 @@
     pointer-events: none;
     transition: all .3s ease-in-out;
 }
+.formulario div textarea {
+    width: 100%;
+    font-family: var(--montserrat);
+}
 
 .formulario div input:valid ~span,
-.formulario div input:focus ~span{
+.formulario div input:focus ~span,
+.formulario div textarea:focus ~span,
+.formulario div textarea:valid ~span{
     top: -13px;
     font-size: .9rem;
     font-weight:400 ;
@@ -150,6 +172,9 @@
         padding: 0;
         width: 100%;
     }
+    .redes-sociales__datos > a i{
+        font-size: 2.2rem;
+    }
 }
 @media screen and (min-width: 768px) and (max-width:1023px)  {
 
@@ -159,13 +184,4 @@
     .datos > div p{
         font-size: 1.2rem;
     }
-}
-
-@media screen and (min-width: 1024px)  {
-
-    .formulario{
-        min-width: 400px;
-        width: 100%;
-    }
-    
 }

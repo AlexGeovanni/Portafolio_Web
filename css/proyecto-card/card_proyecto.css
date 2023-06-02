@@ -165,7 +165,7 @@
         height: 250px;
     }
     .descrip__card{
-        width: 400px;
+        width: 100%;
     }
     .descrip__card p{
         font-size: .9rem;
