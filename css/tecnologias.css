@@ -44,6 +44,11 @@
     font-family: var(--montserrat);
 }
 
+.habilidad img{
+    width: 55px;
+}
+
+
 
 .habilidad .fa-react{
     animation: react 5s linear;
