@@ -13,6 +13,7 @@
 
 .formaciones{
     display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
     justify-content: center;
 }
@@ -40,17 +41,31 @@
     line-height: 20px;
 }
 
-@media screen and (min-width: 0px){
+@media screen and (min-width: 0px) and (max-width: 767px){
+    .titulo__estudios{
+        margin: 0;
+        
+    }
     .titulo__estudios h2{
-        font-size: 1.2rem;
-        line-height: 22px;
+        font-size: 1.150rem;
+        line-height: 21px;
     }
     .titulo__estudios p{
         font-size: .850rem;
     }
+    .formaciones{
+        flex-wrap: wrap;
+
+    }
+    .estudios__formaciones{
+        width: 100%;
+        padding:0;
+        flex-direction: row;
+        gap: 15px;
+    }
     .logo__estudios{
-        width: 80px;
-        height: 70px;
+        width: 100px;
+        height: 90px;
     }
 }
 
