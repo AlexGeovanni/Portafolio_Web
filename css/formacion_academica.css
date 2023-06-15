@@ -52,14 +52,15 @@
     }
     .titulo__estudios p{
         font-size: .850rem;
+        line-height: 16px;
     }
     .formaciones{
         flex-wrap: wrap;
-
     }
     .estudios__formaciones{
         width: 100%;
         padding:0;
+        margin-bottom: 2rem;
         flex-direction: row;
         gap: 15px;
     }
