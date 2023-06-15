@@ -7,9 +7,13 @@
     color: #023e84;
     text-align: center;
 }
-
+.titulo__sub{
+    font-size: 1.750rem;
+    margin-bottom: 1.150rem;
+    width: 85%;
+    margin-left: auto;
+}
 .content_titulo{
-    
     margin-bottom: 1.5rem;
 }
 .content_titulo p{
@@ -22,6 +26,9 @@
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
     gap: 10px;
+}
+.habilidad__mayor{
+    margin-bottom: 3rem;
 }
 .habilidad{
     padding: .4rem;
@@ -102,4 +109,16 @@
         grid-template-columns: repeat(auto-fit,minmax(90px,1fr));
         gap: 7px;
     }
+    .titulo__sub{
+        font-size: 1.350rem;
+        width: 100%;
+        text-align: center;
+    }
 }
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .titulo__sub{
+        width: 95%;
+    }
+}
+
