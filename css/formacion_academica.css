@@ -2,19 +2,28 @@
 .formacion-Acadmia{
     margin-top: 4rem;
 }
-.logo-uni__estudios{
-    width: 180px;
+.logo__estudios{
+    width: 170px;
+    height: 160px;
     margin-top: 1rem;
 }
 .titulo__formacion-Acadmia{
     text-align: center;
 }
 
-.estudios__formacion-Acadmia{
+.formaciones{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.estudios__formaciones{
     padding: 1rem;
     max-width: 400px ;
     text-align: center;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .titulo__estudios{
     margin-top: 2rem;
@@ -33,10 +42,15 @@
 
 @media screen and (min-width: 0px){
     .titulo__estudios h2{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 22px;
     }
     .titulo__estudios p{
-        font-size: .950rem;
+        font-size: .850rem;
+    }
+    .logo__estudios{
+        width: 80px;
+        height: 70px;
     }
 }
 
