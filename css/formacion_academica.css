@@ -5,10 +5,10 @@
 .logo__estudios{
     width: 170px;
     height: 160px;
-    margin-top: 1rem;
 }
 .titulo__formacion-Acadmia{
     text-align: center;
+    margin-bottom: 1.550rem;
 }
 
 .formaciones{
@@ -16,6 +16,7 @@
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: center;
+
 }
 
 .estudios__formaciones{
