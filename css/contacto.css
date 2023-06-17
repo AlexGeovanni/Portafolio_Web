@@ -141,6 +141,7 @@
     color: #fff;
     transition: all .4s ease-in-out;
     border: none;
+    border-radius: 5px;
 }
 
 .formulario button:hover{
