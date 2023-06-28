@@ -32,6 +32,7 @@ a.forEach((Element)=>{
 
 
 
-function menu(){
+function  menu(){
     nav.classList.toggle("abrir__nav");
 }
+

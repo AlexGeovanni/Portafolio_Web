@@ -7,3 +7,12 @@
     window.location.href=`mailto:geovanialex8@gmail.com?subject=envioDesdeFormulario&body=Nombre%3A${Nombre}%0ACorrreo%3A${Email}%0AMensaje%3A${Msj}`
 })
 
+
+
+
+const Apiis = async()=>{
+    const res = await fetch(' https://jobs.github.com/')
+    console.log(res)
+}
+
+Apiis();
