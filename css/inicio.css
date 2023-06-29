@@ -61,11 +61,13 @@
     margin-top: .8rem;
     border-radius:5px ;
 }
+
 .image__inicio{
     width: 750px;
-    /* opacity: 0; */
+    opacity: 0;
     animation: imgProcess 1s ease-in-out both;
 }
+
 .icon-abajo{
     position: absolute;
     font-size: 3.4rem;
@@ -84,6 +86,7 @@
         transform: translateY(-6px);
     }
 } 
+
 @keyframes imgProcess {
     100%{
         opacity: 1;
@@ -164,7 +167,6 @@
 }
 
 @media screen and (min-width: 1024px)  {
-    
     .content__inicio{
         width: 80%; 
     }
@@ -181,5 +183,23 @@
     .descargar_cv{
         width:200px;
         padding: 1.1rem 0;
+    }
+}
+
+
+
+@media screen and (min-width: 1680px)  {
+    .inicio{
+        clip-path: polygon(100% 0, 100% 65%, 50% 97%, 0 65%, 0 0);
+        padding-top: 5rem;
+    }
+    .content__inicio{
+        width: 85%;
+    }
+    .image__inicio{
+        width: 520px;
+    }
+    .descargar_cv{
+        width:220px;
     }
 }
