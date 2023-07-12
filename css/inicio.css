@@ -146,9 +146,17 @@
 }
 
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .inicio{
+        height: 50vh;
+        margin-top: 0;;
+        clip-path: none;
+    }
     .content__inicio{
         width: 90%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .info__present .titulo__present{
     font-size: 2.250rem;
@@ -158,7 +166,7 @@
         font-size: 1.150rem;
     }
     .image__inicio{
-        width: 340px;
+        width: 310px;
     }
     .descargar_cv{
         width:180px;
